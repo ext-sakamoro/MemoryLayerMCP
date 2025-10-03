@@ -97,11 +97,34 @@ Memory ID [your-id-here] の会話を見せて
 3. 新しい API key を生成
 4. インストール時に入力
 
+## 🛠️ 他の AI ツール対応
+
+このリポジトリは Claude Desktop 用 MCP サーバーを提供していますが、Memory Layer API は**すべての AI ツール**で動作します:
+
+### 対応連携
+
+- **ChatGPT** - Custom Instructions / GPT Actions → [セットアップガイド](CHATGPT_SETUP.ja.md)
+- **Gemini CLI** - Python/Shell スクリプト → [セットアップガイド](GEMINI_CLI_SETUP.ja.md)
+- **Cursor** - .cursorrules 設定 → [セットアップガイド](CURSOR_SETUP.ja.md)
+- **Windsurf** - AI 設定 → [セットアップガイド](AI_TOOLS_SETUP.ja.md)
+- **Devin** - タスク自動化 → [セットアップガイド](AI_TOOLS_SETUP.ja.md)
+- **API アクセス可能な任意のツール** → [連携ガイド](INTEGRATIONS.ja.md)
+
+**→ [すべてのツール向け完全連携ガイド](INTEGRATIONS.ja.md)**
+
 ## 📚 ドキュメント
 
+### Claude Desktop (MCP サーバー)
 - [クイックスタートガイド](QUICK_START.ja.md) | [English](QUICK_START.md)
 - [使い方ガイド](USAGE_GUIDE.ja.md) | [English](USAGE_GUIDE.md)
 - [Claude アプリ設定方法](CLAUDE_APP_SETUP.ja.md) | [English](CLAUDE_APP_SETUP.md)
+
+### 他の AI ツール
+- [ChatGPT セットアップ](CHATGPT_SETUP.ja.md) | [English](CHATGPT_SETUP.md)
+- [Gemini CLI セットアップ](GEMINI_CLI_SETUP.ja.md) | [English](GEMINI_CLI_SETUP.md)
+- [Cursor セットアップ](CURSOR_SETUP.ja.md) | [English](CURSOR_SETUP.md)
+- [Windsurf & Devin セットアップ](AI_TOOLS_SETUP.ja.md) | [English](AI_TOOLS_SETUP.md)
+- [完全連携ガイド](INTEGRATIONS.ja.md) | [English](INTEGRATIONS.md)
 
 ## 🔧 技術詳細
 

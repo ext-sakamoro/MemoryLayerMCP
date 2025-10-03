@@ -97,11 +97,34 @@ What did I learn about programming?
 3. Generate a new API key
 4. Enter it during installation
 
+## 🛠️ Other AI Tools Support
+
+This repository provides MCP server for Claude Desktop, but Memory Layer API works with **all AI tools**:
+
+### Supported Integrations
+
+- **ChatGPT** - Custom Instructions / GPT Actions → [Setup Guide](CHATGPT_SETUP.md)
+- **Gemini CLI** - Python/Shell scripts → [Setup Guide](GEMINI_CLI_SETUP.md)
+- **Cursor** - .cursorrules configuration → [Setup Guide](CURSOR_SETUP.md)
+- **Windsurf** - AI configuration → [Setup Guide](AI_TOOLS_SETUP.md)
+- **Devin** - Task automation → [Setup Guide](AI_TOOLS_SETUP.md)
+- **Any tool with API access** → [Integration Guide](INTEGRATIONS.md)
+
+**→ [Complete Integration Guide for All Tools](INTEGRATIONS.md)**
+
 ## 📚 Documentation
 
+### Claude Desktop (MCP Server)
 - [Quick Start Guide](QUICK_START.md) | [日本語版](QUICK_START.ja.md)
 - [Usage Guide](USAGE_GUIDE.md) | [日本語版](USAGE_GUIDE.ja.md)
 - [Claude App Setup](CLAUDE_APP_SETUP.md) | [日本語版](CLAUDE_APP_SETUP.ja.md)
+
+### Other AI Tools
+- [ChatGPT Setup](CHATGPT_SETUP.md) | [日本語版](CHATGPT_SETUP.ja.md)
+- [Gemini CLI Setup](GEMINI_CLI_SETUP.md) | [日本語版](GEMINI_CLI_SETUP.ja.md)
+- [Cursor Setup](CURSOR_SETUP.md) | [日本語版](CURSOR_SETUP.ja.md)
+- [Windsurf & Devin Setup](AI_TOOLS_SETUP.md) | [日本語版](AI_TOOLS_SETUP.ja.md)
+- [Complete Integration Guide](INTEGRATIONS.md) | [日本語版](INTEGRATIONS.ja.md)
 
 ## 🔧 Technical Details
 
