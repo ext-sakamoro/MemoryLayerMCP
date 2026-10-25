@@ -1,7 +1,7 @@
 {
   "name": "memory-layer-mcp",
   "version": "1.0.0",
-  "description": "MCP server for Memory Layer API integration with Claude Code",
+  "description": "Memory Layer API MCP client (service ended)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "@modelcontextprotocol/sdk": "^1.0.4",
     "node-fetch": "^3.3.2"
   },
-  "keywords": ["mcp", "memory-layer", "claude"],
+  "keywords": ["mcp", "memory-layer"],
   "author": "",
   "license": "MIT"
 }

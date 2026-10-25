@@ -8,7 +8,10 @@ import {
 } from '@modelcontextprotocol/sdk/types.js';
 import fetch from 'node-fetch';
 
-const MEMORY_LAYER_API = process.env.MEMORY_LAYER_API_URL || 'https://back.memory-layer.emotiai.ai';
+const MEMORY_LAYER_API = process.env.MEMORY_LAYER_API_URL;
+if (!MEMORY_LAYER_API) {
+  throw new Error('MEMORY_LAYER_API_URL is not set');
+}
 
 class MemoryLayerServer {
   constructor() {
@@ -38,7 +41,7 @@ class MemoryLayerServer {
       tools: [
         {
           name: 'save_conversation_to_memory_layer',
-          description: 'Save a conversation to Memory Layer API. Use this when the user wants to save their conversation with Claude.',
+          description: 'Save a conversation to Memory Layer API. Use this when the user wants to save their conversation.',
           inputSchema: {
             type: 'object',
             properties: {
@@ -57,11 +60,11 @@ class MemoryLayerServer {
               tags: {
                 type: 'array',
                 items: { type: 'string' },
-                description: 'Tags for categorization (e.g., ["Claude Code", "conversation"])',
+                description: 'Tags for categorization (e.g., ["work", "conversation"])',
               },
               metadata: {
                 type: 'object',
-                description: 'Additional metadata (e.g., { "source": "Claude Code", "date": "2025-10-03" })',
+                description: 'Additional metadata (e.g., { "source": "cli", "date": "2025-10-03" })',
               },
             },
             required: ['api_key', 'title', 'content'],
@@ -176,9 +179,9 @@ class MemoryLayerServer {
           title: args.title,
           content: args.content,
           memory_type: 'text',
-          tags: args.tags || ['Claude Code', 'conversation'],
+          tags: args.tags || ['conversation'],
           metadata: {
-            source: 'Claude Code',
+            source: 'cli',
             date: new Date().toISOString(),
             ...args.metadata,
           },
